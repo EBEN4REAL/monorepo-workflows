@@ -14,5 +14,9 @@
     "lodash": "^4.17.21"
   },
   "type": "module",
-  "gitHead": "b236676d2faf13970eb751f1b087b8a27e7b2329"
+  "gitHead": "f2221ab69157eafe518995233f424ad49a9c7491",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
 }
