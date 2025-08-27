@@ -1,0 +1,17 @@
+{
+  "name": "@eben4real/ui",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "gitHead": "b236676d2faf13970eb751f1b087b8a27e7b2329",
+  "dependencies": {
+    "@eben4real/shared": "*",
+    "react": "^19.1.1"
+  }
+}
