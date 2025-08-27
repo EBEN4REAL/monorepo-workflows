@@ -1,6 +1,6 @@
 {
   "name": "@eben4real/shared",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "> TODO: description",
   "author": "Ebenezer Igbinoba <ebenezer.igbinoba@stu.cu.edu.ng>",
   "homepage": "https://github.com/EBEN4REAL/monorepo-workflows#readme",
@@ -14,7 +14,10 @@
   "files": [
     "lib"
   ],
-  "publishConfig": { "access": "public", "registry": "https://npm.pkg.github.com" },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EBEN4REAL/monorepo-workflows.git"
