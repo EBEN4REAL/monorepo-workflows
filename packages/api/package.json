@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@monorepo/utils": "^0.2.0"
   },
-  "type": "module"
+  "type": "module",
+  "gitHead": "f1ed4f2830fc29f8d446e942a6d170a25df07872"
 }
