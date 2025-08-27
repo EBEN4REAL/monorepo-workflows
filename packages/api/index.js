@@ -1,5 +1,5 @@
 import express from 'express';
-import { greet } from '@monorepo/shared';   
+import { greet } from '@eben4real/shared';   
 
 const app = express();
 const PORT = process.env.PORT || 3000;
