@@ -18,7 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@eben4real'
 
       - name: Install dependencies
         run: npm install
@@ -28,3 +29,26 @@ jobs:
 
       - name: Build packages
         run: npx lerna run build
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build   # <-- ensures build job finishes first
+    if: github.ref == 'refs/heads/main'   # <-- only runs on main branch
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@eben4real'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx lerna publish from-package --yes
