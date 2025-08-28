@@ -23,7 +23,7 @@
     "url": "git+https://github.com/EBEN4REAL/monorepo-workflows.git"
   },
   "scripts": {
-    "test": "node ./__tests__/assets.test.js"
+    "test": "node ./__tests__/shared.test.js"
   },
   "bugs": {
     "url": "https://github.com/EBEN4REAL/monorepo-workflows/issues"
