@@ -1,6 +1,6 @@
 {
   "name": "@eben4real/ui",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "type": "module",
   "gitHead": "f2221ab69157eafe518995233f424ad49a9c7491",
   "dependencies": {
-    "@eben4real/shared": "^0.6.1",
+    "@eben4real/shared": "^0.6.2",
     "react": "^19.1.1"
   },
   "publishConfig": {
