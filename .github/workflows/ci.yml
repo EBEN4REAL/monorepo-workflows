@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read     # required to push commits/tags
+  contents: write
+  packages: write    # required to publish to GitHub Packages
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,6 +50,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@eben4real'
 
+      - name: Set git user for Lerna
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Install dependencies
         run: npm install
 
@@ -52,3 +62,4 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx lerna publish from-package --yes
+
