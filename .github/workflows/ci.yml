@@ -60,5 +60,5 @@ jobs:
       - name: Publish packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TOKEN }}
-        run: npx lerna publish from-package --yes
+        run: npx lerna publish --conventional-commits --yes --no-private
 
