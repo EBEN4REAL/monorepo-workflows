@@ -1,6 +1,6 @@
 {
   "name": "@eben4real/api",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@eben4real/shared": "^0.6.0",
+    "@eben4real/shared": "^0.6.1",
     "express": "^5.1.0",
     "lodash": "^4.17.21"
   },
